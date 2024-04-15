@@ -13,6 +13,6 @@ public class Question3
     Scanner in = new Scanner(System.in);
     int num = in.nextInt();
     int numSquared = num * num;
-    System.out.print(numSquared);
+    System.out.print(numSquared + "\n");
   }
 }
