@@ -11,13 +11,11 @@ public class Main
      */
 
     Scanner in = new Scanner(System.in);
-    System.out.println("Enter Height");
     double height = in.nextDouble()/100;
     Scanner in2 = new Scanner(System.in);
-    System.out.println("Enter Weight");
     double weight = in2.nextDouble();
 
     double BMI = weight/(height*height);
-    System.out.println("Your BMI is " + BMI);
+    System.out.println(BMI);
   }
 }
