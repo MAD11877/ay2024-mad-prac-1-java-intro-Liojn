@@ -28,11 +28,9 @@ public class Main
      */
     HashMap<Integer, Integer> numbers = new HashMap<Integer,Integer>();
     Scanner in = new Scanner(System.in);
-    System.out.println("Enter the number of integers you will be entering next: ");
     int num = in.nextInt();
 
     for (int i = 0; i < num; i++) {
-        System.out.println("Enter an integer: ");
         int num1 = in.nextInt();
         if (numbers.containsKey(num1)) {
             numbers.put(num1, numbers.get(num1) + 1);
@@ -49,6 +47,6 @@ public class Main
             mode = key;
         }
     }
-    System.out.println("Mode: " + mode);
+    System.out.println(mode);
 }
 }
