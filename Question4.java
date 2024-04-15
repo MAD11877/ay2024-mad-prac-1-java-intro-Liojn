@@ -18,7 +18,6 @@ public class Main
      */
 
     Scanner in = new Scanner(System.in);
-    System.out.println("Enter a number:");
     int num = in.nextInt();
     for (int i = num; i > 0; i--)
       {
@@ -28,6 +27,6 @@ public class Main
           }
         System.out.print("\n");
       }
-        
+
   }
 }
