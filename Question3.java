@@ -11,9 +11,8 @@ public class Main
      */
 
     Scanner in = new Scanner(System.in);
-    System.out.print("Enter an integer: ");
     int num = in.nextInt();
     int numSquared = num * num;
-    System.out.print(num + " squared is " + numSquared);
+    System.out.print(numSquared);
   }
 }
