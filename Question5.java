@@ -1,6 +1,7 @@
 import java.util.Scanner;
+import java.util.HashMap;
 
-public class Question5
+public class Main
 {
   public static void main(String[] args)
   {
@@ -25,8 +26,29 @@ public class Question5
      *     2
      * Hint: Use a loop to get input. Use another 2 loops to find the mode
      */
-     
+    HashMap<Integer, Integer> numbers = new HashMap<Integer,Integer>();
     Scanner in = new Scanner(System.in);
-    
-  }
+    System.out.println("Enter the number of integers you will be entering next: ");
+    int num = in.nextInt();
+
+    for (int i = 0; i < num; i++) {
+        System.out.println("Enter an integer: ");
+        int num1 = in.nextInt();
+        if (numbers.containsKey(num1)) {
+            numbers.put(num1, numbers.get(num1) + 1);
+        } else {
+            numbers.put(num1, 1);
+        }
+    }
+
+    int max = 0;
+    int mode = 0;
+    for (int key : numbers.keySet()) {
+        if (numbers.get(key) > max) {
+            max = numbers.get(key);
+            mode = key;
+        }
+    }
+    System.out.println("Mode: " + mode);
+}
 }
